@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 3 D3 part</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 style="text-align: center">Greetings, Professor!</h1>
+<body style="background-blend-mode: lighten; background-color: rgb(255,255,255,0.6); background-image: url(https://i.ibb.co/M2HQYck/IMG-9771.jpg")">
+    <h1 style="text-align: center; color: #417a82">Greetings, Professor!</h1>
+    <h4 style="text-align: center; font-family: sans-serif;">Email:
+        <a href="scolponeti.j@northeastern.edu">scolponeti.j@northeastern.edu</a>
+    </h4>
+    <h4 style="text-align: center; font-family: sans-serif;">
+        <a href="https://www.instagram.com/joeyjas_5963/">Instagram</a>
+        <a href="https://www.linkedin.com/in/joseph-scolponeti/">LinkedIn</a>
 
-    <img src="https://i.ibb.co/gS1Sm1M/IMG-5414-1.jpg"
-         alt="IMG-5414-1"
-         width="300"
-         height="400"
-         class="center">
+    </h4>
 
-    <p style="text-align: center">
+    <div style="text-align: center">
+        <img src="https://i.ibb.co/gS1Sm1M/IMG-5414-1.jpg"
+             alt="IMG-5414-1"
+             width="300"
+             height="400">
+    </div>
+
+    <p class= "A" style="text-align: center; font-family: sans-serif;">
         My name is Joey Scolponeti, and I am a fourth year at
         Northeastern University studying data science and business.
         Alongside data visualization, I'm taking some machine learning
@@ -33,6 +43,18 @@
         with other people at the same time so we can discuss them like a book club
         of sorts. I'm definitely making the most out of my last year of college.
     </p>
+
+    <div style="text-align: center;">
+    <button id = 'navigationButton'>Click Here to See My Cat</button>
+    <script>
+        const navigationButton = document.getElementById('navigationButton')
+        navigationButton.addEventListener('click', function(){
+            window.location.href = 'cat.html';
+        }
+
+        )
+    </script>
+    </div>
     
     <script src='https://d3js.org/d3.v7.min.js'></script>
     <script src='main.js'></script>
